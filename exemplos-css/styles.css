@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p{
+    color:crimson;
+    font-size: 20px;
+}
+
+.teste-classe{
+    color: darkmagenta;
+    font-size: 18px;
+}
+
+#rodape{
+    color: aqua;
+    font-size: 10px;
+
+}
+
+#email{
+    background-color: gainsboro;
+    height: 30px;
+    border-radius: 25px;
+}

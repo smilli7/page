@@ -1,0 +1,67 @@
+*{
+    margin: 25;
+    padding: 10;
+    box-sizing: border-box;
+}
+
+img{
+    width: 50px;
+}
+
+body{
+    font-family: 'Sageo UI', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #222;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+h2{
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+    color: #2c3e50;
+}
+
+p{
+    margin-bottom: 12px;
+}
+
+a{
+    color: #2a6bf2;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+    margin: 0 12px;
+}
+
+#vantagens ul{
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+#vantagens li{
+    margin-bottom: 8px;
+}

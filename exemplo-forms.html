@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Formlário</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <form>
+
+            <h3>Faça seu cadastro</h3>
+            <form id="registerForm" method="post">
+                <label for="nome">Nome completo:</label>
+                <input id="nome" name="nome" type="text" required/>
+                <br>
+                <label for="email">Informe seu E-Mail:</label>
+                <input id="email" name="email" type="email" required/>
+                <br>
+                <label for="senha">Digite sua senha:</label>
+                <input type="password" id="senha" name="senha" required/>
+                <br>
+                <textarea name="mensagem" id="mensagem" rows="4" cols="30"></textarea>
+                <br>
+                <label for="evento">Escolha seu evento</label>
+                <select name="evento" id="evento">
+                    <option value="Jogo do Corinthians">Corinthians</option>
+                    <option value="Jogo do Corinthians">Corinthians</option>
+                    <option value="Jogo do Corinthians">Corinthians</option>
+                </select>
+                <label>
+                    <input type="checkbox" id="termos" name="termos" required/>
+                    Concordo com os termos
+                </label>
+                <br>
+                <p>Forma de pagamento</p>
+                <label><input type="radio" value="pix" name="pagamento">Pix</label>
+                 <label><input type="radio" value="cartao" name="pagamento">Cartão</label>
+                <br>
+                </label>
+                <input placeholder="Informe seu CPF" type="text" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" title="Formato esperado 000.000.000-00" required/>
+                <input type="submit" value="Cadastrar"/>
+                    
+
+
+        </form>
+    </main>
+    <footer></footer>
+
+    <script>
+        // Capturando um elemento HTML pelo ID.
+        // Escutando o event do submit deste elemento.
+        document.getElementById('registerForm')
+        addEventListener('submit', function(event){
+        // Impedindo o comportamento padrâo do envio do form
+            event.preventDefault()
+        //Pegando o valor preenchido no imput nome 
+            const nome = document.getElementById('nome').value;
+            const email = document.getElementById('email').value;
+        // Criando um alerta na tela.
+        alert('Olá '+nome+' Formulário enviado'+ 'Sua senha'+senha)
+        alert('Seu E-mail é' +email )
+        })
+    </script>
+
+</body>
+</html>
